@@ -8,7 +8,7 @@ export const Inventory = () => {
     // state.
 
     const handleChange=(value)=>{
-      if(inv<=0){
+      if(inv<=0 && value<0){
         return
       }
       setInv(inv+value)
